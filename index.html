@@ -10,24 +10,30 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/ajaxify.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			jQuery("#contentBox").ajaxify();
-		});
-	</script>
-	<script src="js/pages.js"></script>
+	<!-- <script src="js/pages.js"></script> -->
 </head>
 
 <body>
 <div id="sidenav" class="windowbg">
 	<div class="content" id="sidemenu">
-		
+		<h2 class="one">Nav Menu</h2>
+		<ul class="one">
+			<li><a href="html/example.html">Click here</a></li>
+		</ul>
 	</div>
 </div>
 <div id="preview" class="windowbg">
 	<div class="content" id="contentBox">
-		
+		<h2>Choose the chapter</h2>
+		<h3>Pick one on the left</h3>
+		Here will be loaded content.
 	</div>
 </div>
+
+<script>
+	$(document).ready(function(){
+		jQuery("#contentBox").ajaxify();
+	});
+</script>
 </body>
 </html>
